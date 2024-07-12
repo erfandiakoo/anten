@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Configuration Profile Generator with Unique Uuid</title>
+    <title>Welcome | Configuration Profile Generator with Unique Uuid</title>
     <!-- Tailwind css -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Add custom CSS styles -->
@@ -14,54 +14,83 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
+    <!-- Vazir Font -->
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet"
+        type="text/css" />
+    <link rel="shortcut icon" href="./assets/booster.png" type="image/x-icon">
 </head>
 
 <body>
-    <div class="container">
-        <h1 class=" text-2xl">Configuration Profile Generator with Unique Uuid</h1>
-        <a href="https://x.com/aigptcode" target="_blank">@AiGptCode اموزش تصویری</a>
+    <div class="mx-auto max-w-3xl p-5 flex justify-center items-center flex-col">
+        <!-- <h1 class=" text-2xl">Configuration Profile Generator with Unique Uuid</h1> -->
+        <h1 class=" text-2xl mt-12 text-center">سازنده پروفایل آیفون یونیک با استفاده از UUID</h1>
+        <a href="https://x.com/aigptcode" target="_blank"
+            class="w-full p-5 text-center text-white bg-blue-300 rounded-xl hover:bg-blue-500 duration-500 my-4">اموزش
+            تصویری</a>
         </h1>
         <!-- Add form for configuration generator -->
-        <form id="config-form">
+        <form id=" config-form" class="w-full flex flex-col justify-center items-center">
             <!-- APN -->
-            <div class="mb-3">
-                <label for="apn" class="form-label apn">APN:</label>
-                <select id="apn" class="form-select">
-                    <option value="mcinet">MCI</option>
-                    <option value="mtnirancell">Irancell</option>
-                    <option value="RighTel">RighTel</option>
+            <div class="mb-3 flex gap-2 justify-center items-center">
+                <div class="form-text">اپراتور خود را انتخاب کنید : </div>
+                <select id="apn" class="form-select border border-gray-300 rounded-xl px-3 py-2 text-center">
+                    <option value="mcinet">هـمراه اول</option>
+                    <option value="mtnirancell">ایــرانسـل</option>
+                    <option value="RighTel">رایـتـل</option>
                 </select>
-                <div class="form-text">اپراتور خود را انتخاب کنید</div>
             </div>
 
-            <button type="submit" class="btn btn-primary">Generate Configuration Profile</button>
+            <button type="submit"
+                class="rounded-xl bg-black text-white px-10 py-4 hover:bg-white hover:text-black hover:shadow-md duration-300">سـاختن
+                پروفایــل کانفیگ
+                جدیـد</button>
         </form>
 
         <!-- Message box -->
-        <div class="alert mt-3" role="alert">
-            <h4 class="alert-heading carrier">Signal Booster:</h4>
-            <p>A signal booster, also known as a repeater, is a device that amplifies a wireless signal. It can be used
-                to improve the signal strength and coverage in areas where the signal is weak or obstructed.</p>
-            <h4 class="alert-heading apn">APN:</h4>
-            <p>APN (Access Point Name) is a gateway between a cellular network and the public internet. It is used to
-                set up a data connection on a mobile device, and different carriers may have different APN settings.</p>
-            <h4 class="alert-heading proxy">Proxy:</h4>
-            <p>A proxy server is an intermediary between a client and a server. It can be used to provide anonymity,
-                filter content, or cache data to improve performance.</p>
-            <h4 class="alert-heading dns">DNS:</h4>
-            <p>DNS (Domain Name System) is a system that translates domain names into IP addresses. It can be used to
-                block or redirect access to certain websites, or to improve the performance of a network.</p>
+        <div class="grid grid-cols-1 lg:grid-cols-2 mt-12 mx-auto max-w-[1200px] gap-4" role="alert">
+            <div
+                class="card p-5 rounded-xl shadow-lg hover:-translate-y-2 duration-500 flex flex-col justify-center items-center gap-3 hover:bg-gray-100 group">
+                <img src="./assets/booster.png" class="w-32 group-hover:scale-110 duration-500">
+                <h4 class="alert-heading carrier">Signal Booster</h4>
+                <p>A signal booster, also known as a repeater, is a device that amplifies a wireless signal. It can
+                    be
+                    used
+                    to improve the signal strength and coverage in areas where the signal is weak or obstructed.</p>
+            </div>
+            <div
+                class="card p-5 rounded-xl shadow-lg hover:-translate-y-2 duration-500 flex flex-col justify-center items-center gap-3 hover:bg-gray-100 group">
+                <img src="./assets/apn.png" class="w-32 group-hover:scale-110 duration-500">
 
-            <h4 class="alert-heading supporting"> SUPPORT حمایت </h4>
-            <p> 💞️ Feel free to support my endeavors through donations at:
+                <h4 class="alert-heading apn">APN</h4>
+                <p>APN (Access Point Name) is a gateway between a cellular network and the public internet. It is
+                    used
+                    to
+                    set up a data connection on a mobile device, and different carriers may have different APN
+                    settings.
+                </p>
 
-            <p>Ethereum: 0xc177e861fD9a9F598236C7183e105b9CCec9cb3e</p>
+            </div>
+            <div
+                class="card p-5 rounded-xl shadow-lg hover:-translate-y-2 duration-500 flex flex-col justify-center items-center gap-3 hover:bg-gray-100 group">
+                <img src="./assets/proxy.png" class="w-32 group-hover:scale-110 duration-500">
 
-            <p>Bitcoin: bc1q3230gkphdk5qzsxtj079mz5w35svwrpwq6wh8c</p>
 
-            <p>Follow Me on Github & X : @AiGptCode</p>
-            </p>
 
+                <h4 class="alert-heading proxy">Proxy</h4>
+                <p>A proxy server is an intermediary between a client and a server. It can be used to provide
+                    anonymity,
+                    filter content, or cache data to improve performance.</p>
+            </div>
+            <div
+                class="card p-5 rounded-xl shadow-lg hover:-translate-y-2 duration-500 flex flex-col justify-center items-center gap-3 hover:bg-gray-100 group">
+                <img src="./assets/dns.png" class="w-32 group-hover:scale-110 duration-500">
+                <h4 class="alert-heading dns">DNS</h4>
+                <p>DNS (Domain Name System) is a system that translates domain names into IP addresses. It can be
+                    used
+                    to
+                    block or redirect access to certain websites, or to improve the performance of a network.</p>
+
+            </div>
         </div>
     </div>
 
