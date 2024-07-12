@@ -24,34 +24,42 @@
 
 <body>
     <div class="mx-auto max-w-3xl p-5 flex justify-center items-center flex-col">
-        <!-- <h1 class=" text-2xl">Configuration Profile Generator with Unique Uuid</h1> -->
-        <h1 class=" text-2xl mt-12 text-center">سازنده پروفایل آیفون یونیک با استفاده از UUID</h1>
+        <h1 class="text-2xl mt-12 text-center font-thin">Configuration Profile Generator with Unique <b>UUID</b></h1>
+        <!-- <h1 class=" text-2xl mt-12 text-center">سازنده پروفایل آیفون یونیک با استفاده از UUID</h1> -->
         <a href="https://x.com/aigptcode" target="_blank"
-            class="w-full p-5 text-center text-white bg-blue-300 rounded-xl hover:bg-blue-500 duration-500 my-4">اموزش
-            تصویری</a>
+            class="w-full p-5 text-center font-thin flex justify-center items-center flex-row-reverse gap-1 text-white rounded-xl card hover:bg-[#ffffff52] my-4">اموزش
+            تصویری
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M15.91 11.672a.375.375 0 0 1 0 .656l-5.603 3.113a.375.375 0 0 1-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112Z" />
+            </svg>
+
+        </a>
         </h1>
         <!-- Add form for configuration generator -->
         <form id=" config-form" class="w-full flex flex-col justify-center items-center">
             <!-- APN -->
-            <div class="mb-3 flex gap-2 justify-center items-center">
-                <div class="form-text">اپراتور خود را انتخاب کنید : </div>
-                <select id="apn" class="form-select border border-gray-300 rounded-xl px-3 py-2 text-center">
-                    <option value="mcinet">هـمراه اول</option>
-                    <option value="mtnirancell">ایــرانسـل</option>
-                    <option value="RighTel">رایـتـل</option>
+            <div class="mb-3 flex flex-row-reverse gap-2 justify-center items-center">
+                <div class="form-text font-thin"> : Choose Your APN</div>
+                <select id="apn" class="form-select border-none rounded-sm bg-white text-black px-4 py-1 text-center">
+                    <option value="mcinet">MCI</option>
+                    <option value="mtnirancell">Irancell</option>
+                    <option value="RighTel">RighTel</option>
                 </select>
             </div>
 
             <button type="submit"
-                class="rounded-xl bg-black text-white px-10 py-4 hover:bg-white hover:text-black hover:shadow-md duration-300">سـاختن
-                پروفایــل کانفیگ
-                جدیـد</button>
+                class="rounded-xl bg-blue-600 text-white px-10 py-4 hover:bg-blue-800 hover:shadow-md duration-300">
+                Generate Profile
+            </button>
         </form>
 
         <!-- Message box -->
         <div class="grid grid-cols-1 lg:grid-cols-2 mt-12 mx-auto max-w-[1200px] gap-4" role="alert">
             <div
-                class="card p-5 rounded-xl shadow-lg hover:-translate-y-2 duration-500 flex flex-col justify-center items-center gap-3 hover:bg-gray-100 group">
+                class="card p-5 rounded-xl shadow-lg hover:-translate-y-2 duration-500 flex flex-col justify-center items-center gap-3   group">
                 <img src="./assets/booster.png" class="w-32 group-hover:scale-110 duration-500">
                 <h4 class="alert-heading carrier">Signal Booster</h4>
                 <p>A signal booster, also known as a repeater, is a device that amplifies a wireless signal. It can
@@ -60,7 +68,7 @@
                     to improve the signal strength and coverage in areas where the signal is weak or obstructed.</p>
             </div>
             <div
-                class="card p-5 rounded-xl shadow-lg hover:-translate-y-2 duration-500 flex flex-col justify-center items-center gap-3 hover:bg-gray-100 group">
+                class="card p-5 rounded-xl shadow-lg hover:-translate-y-2 duration-500 flex flex-col justify-center items-center gap-3   group">
                 <img src="./assets/apn.png" class="w-32 group-hover:scale-110 duration-500">
 
                 <h4 class="alert-heading apn">APN</h4>
@@ -73,7 +81,7 @@
 
             </div>
             <div
-                class="card p-5 rounded-xl shadow-lg hover:-translate-y-2 duration-500 flex flex-col justify-center items-center gap-3 hover:bg-gray-100 group">
+                class="card p-5 rounded-xl shadow-lg hover:-translate-y-2 duration-500 flex flex-col justify-center items-center gap-3   group">
                 <img src="./assets/proxy.png" class="w-32 group-hover:scale-110 duration-500">
 
 
@@ -84,7 +92,7 @@
                     filter content, or cache data to improve performance.</p>
             </div>
             <div
-                class="card p-5 rounded-xl shadow-lg hover:-translate-y-2 duration-500 flex flex-col justify-center items-center gap-3 hover:bg-gray-100 group">
+                class="card p-5 rounded-xl shadow-lg hover:-translate-y-2 duration-500 flex flex-col justify-center items-center gap-3   group">
                 <img src="./assets/dns.png" class="w-32 group-hover:scale-110 duration-500">
                 <h4 class="alert-heading dns">DNS</h4>
                 <p>DNS (Domain Name System) is a system that translates domain names into IP addresses. It can be
