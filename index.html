@@ -43,7 +43,7 @@
         </a>
         </h1>
         <!-- Add form for configuration generator -->
-        <form id=" config-form" class="w-full flex flex-col justify-center items-center">
+        <form id="config-form" class="w-full flex flex-col justify-center items-center">
             <!-- APN -->
             <div class="mb-3 flex flex-row-reverse gap-2 justify-center items-center">
                 <div class="form-text font-thin"> : Choose Your APN</div>
@@ -113,6 +113,10 @@
     <!-- Add custom JavaScript -->
     <script>
         const configForm = document.getElementById('config-form');
+        const loading = document.querySelector('.preloader-screen');
+        window.addEventListener("load", () => {
+            loading.classList.add('hidden')
+        })
 
         function generateUniqueUUID() {
             return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
@@ -126,6 +130,7 @@
 
             // Collect form data
             const apn = document.getElementById('apn').value;
+            console.log(apn)
 
             // Create the XML-formatted plist string
             const configPlist = `<?xml version="1.0" encoding="UTF-8"?>
